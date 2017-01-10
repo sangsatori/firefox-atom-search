@@ -8,4 +8,4 @@
     <Param name="q" value="{searchTerms}"/>
   </Url>
   <moz:SearchForm>https://atom.io/packages</moz:SearchForm>
-</OpenSearchDescription/>
+</OpenSearchDescription>
