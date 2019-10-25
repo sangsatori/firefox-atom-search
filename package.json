@@ -1,0 +1,29 @@
+{
+  "name": "firefox-atom-search",
+  "version": "2.0.0",
+  "private": true,
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sangsatori/firefox-atom-search.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sangsatori/firefox-atom-search/issues"
+  },
+  "homepage": "https://addons.mozilla.org/en-US/firefox/addon/atom-search-webext/",
+  "scripts": {
+    "test": "web-ext lint",
+    "build": "web-ext build --overwrite-dest",
+    "dev": "web-ext run"
+  },
+  "webExt": {
+    "sourceDir": "./src",
+    "artifactsDir": "./dist",
+    "ignoreFiles": [
+      "./icons/!(*.svg)"
+    ]
+  },
+  "devDependencies": {
+    "web-ext": "^3.2.0"
+  }
+}

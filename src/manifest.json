@@ -1,0 +1,23 @@
+{
+  "manifest_version": 2,
+  "name": "Atom Package  Search",
+  "version": "2.0.0",
+  "description": "Search Atom editor packages",
+  "icons": {
+    "48": "icons/atom-logo-48.svg"
+  },
+  "chrome_settings_overrides": {
+    "search_provider": {
+      "name": "Atom packages",
+      "search_url": "https://atom.io/packages/search?q={searchTerms}",
+      "favicon_url": "https://atom.io/favicon.ico",
+      "keyword": "atom-pkg"
+    }
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "{d3ad204c-9e8e-4456-90b5-e9feb0dbbd35}",
+      "strict_min_version": "55.0"
+    }
+  }
+}
